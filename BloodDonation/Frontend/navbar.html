@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Links CSS file -->
+</head>
+<body>
+    <nav class="navbar">
+        <div class="brand">
+            <a href="/BloodDonation/Frontend/index.php" style="text-decoration: none; color: white;">Blood Donation Initiative</a>
+        </div>
+        <ul class="nav-links">
+            <li><a href="/BloodDonation/Frontend/about.php">About Us</a></li>
+            <li><a href="/BloodDonation/Frontend/Forms/donate_blood.php">Donate Blood</a></li>
+            <li><a href="/BloodDonation/Frontend/Forms/request_blood.php">Request Blood</a></li>
+            <li><a href="/BloodDonation/Frontend/search_donors.php">Search Donors</a></li>
+            <li><a href="/BloodDonation/Frontend/contact.php">Contact Us</a></li>
+            <li><a href="/BloodDonation/Frontend/Forms/login.php">Login</a></li>
+        </ul>
+    </nav>
+</body>
+<script>
+    // Select all nav links
+    const navLinks = document.querySelectorAll('.nav-link');
+  
+    // Add click event listener to each link
+    navLinks.forEach(link => {
+      link.addEventListener('click', () => {
+        // Remove 'active' class from all links
+        navLinks.forEach(l => l.classList.remove('active'));
+        
+        // Add 'active' class to the clicked link
+        link.classList.add('active');
+      });
+    });
+  </script>
+  
+</html>

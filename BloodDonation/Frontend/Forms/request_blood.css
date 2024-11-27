@@ -1,0 +1,161 @@
+/* Navbar styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #FF4F4F;
+    color: white;
+    padding: 15px 30px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    height: 30px;
+}
+
+.navbar .brand {
+    font-size: 1.8em;
+    font-weight: bold;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links li {
+    margin-left: 10px;
+}
+.navbar ul{
+    margin-right:60px;
+}
+
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 1em;
+    padding: 8px 15px;
+    transition: background-color 0.3s;
+}
+.nav-links a:hover {
+    background-color: #7b98b1;
+    border-radius: 5px;
+}
+
+
+
+
+
+
+/* Reset styles */
+body, h1, h2, p, div, form, textarea, select, input, button {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Body Background */
+body {
+    background-color: #f8f9fa;
+    background-image: white;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensures full height */
+}
+
+/* Spacing for Navbar and Footer */
+body > .form-container {
+    margin: auto; /* Centers the form between the navbar and footer */
+    padding: 20px;
+}
+
+/* Form Container */
+.form-container {
+    width: 100%;
+    max-width: 400px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-top:2rem;
+    text-align: left;
+}
+/* Highlight the active link */
+.nav-links a.active {
+    background-color: #7b98b1; /* Same as hover color */
+    border-radius: 5px;
+}
+
+
+/* Form Title */
+form h2 {
+    text-align: center;
+    color: #FF4F4F; /* Retaining original color */
+    margin-bottom: 20px;
+    font-size: 1.5em;
+}
+
+/* Labels */
+form label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+/* Inputs and Textarea */
+form input, 
+form textarea, 
+form select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+form input:focus, 
+form textarea:focus, 
+form select:focus {
+    border-color: #FF4F4F;
+}
+
+/* Button */
+form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #FF4F4F;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+form button:hover {
+    background-color: #e64545;
+}
+
+/* Error Message */
+.error {
+    color: red;
+    font-size: 0.9em;
+    margin-top: 10px;
+    text-align: center;
+}
+
+/* Form Responsiveness */
+@media (max-width: 480px) {
+    .form-container {
+        width: 90%;
+        padding: 15px;
+    }
+}

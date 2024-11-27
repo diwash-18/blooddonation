@@ -1,0 +1,129 @@
+/* CSS for Login Form */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Style */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: linear-gradient(to right, #FFB3B3, #FFC6C6);
+    color: #fff;
+}
+
+/* Form Container */
+.form-container {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    box-sizing: border-box;
+}
+
+/* Form Heading */
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #FF4F4F;
+}
+
+/* Form Labels */
+label {
+    font-size: 1.1em;
+    margin-bottom: 5px;
+    color: #333;
+    display: block;
+}
+
+/* Form Inputs */
+input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 1em;
+}
+
+/* Submit Button */
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #FF4F4F;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #cc3e3e;
+}
+
+/* Error Message */
+.error {
+    color: red;
+    font-size: 0.9em;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+/* Links Section */
+.links {
+    text-align: center;
+    font-size: 0.9em;
+    margin-top: 15px; /* Added some margin above the links */
+}
+
+/* Separate Forgot Password link */
+.links a {
+    color: #FF4F4F;
+    text-decoration: none;
+    display: inline-block;
+    margin-bottom: 10px; /* Added margin for spacing */
+}
+
+.links a:hover {
+    text-decoration: underline;
+}
+
+/* "Do you have an account?" and Sign Up link */
+.links p {
+    margin-top: 15px; /* Added space between "Forgot Password?" and "Sign Up" */
+    font-size: 1em; /* Ensured it's more visible */
+}
+
+.links a.signup {
+    text-decoration: none;
+    color: #FF4F4F;
+}
+
+.links a.signup:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 480px) {
+    body {
+        background-color: #FF4F4F;
+        background-image: none;
+    }
+
+    .form-container {
+        padding: 20px;
+        max-width: 100%;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+}

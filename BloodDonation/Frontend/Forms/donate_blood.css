@@ -1,0 +1,148 @@
+/* Navbar styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #FF4F4F;
+    color: white;
+    padding: 15px 30px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    height: 30px;
+}
+
+.navbar .brand {
+    font-size: 1.8em;
+    font-weight: bold;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+.navbar ul{
+    margin-right:60px;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 1em;
+    padding: 8px 15px;
+    transition: background-color 0.3s;
+}
+
+.nav-links a:hover {
+    background-color: #7b98b1;
+    border-radius: 5px;
+}
+
+
+
+
+
+
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+/* Form container */
+.form-container {
+    width: 80%;
+    max-width: 900px;
+    margin: 40px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-top:6.5rem;
+}
+
+/* Heading */
+h2 {
+    text-align: center;
+    color: #FF4F4F;}
+
+/* Form layout */
+.form-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+form label {
+    font-weight: bold;
+    color:#000;
+}
+
+/* Column styling */
+.form-column {
+    width: 48%;
+}
+
+/* Label and input styling */
+label {
+    display: block;
+    margin-bottom: 8px;
+    color: #555;
+    font-size: 14px;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+textarea {
+    height: 100px;
+}
+
+/* Submit button */
+button {
+    background-color:#FF4F4F;
+    color: white;
+    padding: 14px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #cc3e3e;
+}
+
+/* Error message styling */
+.error {
+    color: red;
+    font-size: 14px;
+    text-align: center;
+}
+
+/* Responsive design */
+@media screen and (max-width: 768px) {
+    .form-column {
+        width: 100%;
+    }
+    .form-row {
+        flex-direction: column;
+    }
+}
